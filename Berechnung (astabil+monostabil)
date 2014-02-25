@@ -1,0 +1,20 @@
+// Berechnung von einer astabilen Kippstufe mit Diode
+
+int id_astabil=0;       // Impulsdauer Ti
+int pad=0;              // Pausendauer Tp
+int r1=0;               // Widerstand 1
+int r2=0;               // Widerstand 2
+int k=0;                // Kondensator 1
+int pd=0;               // Periodendauer
+
+id=(0,69*r1*k);
+pad=(0,69*r2*k);
+pd=(id+pad);
+
+// Berechnung von einer monostabilen KIppstufe mit Diode
+
+int id_mono=0;                // Impulsdauer Ti
+int r1_mono=0;                // Widerstand 1
+int k_mono=0;                 // Kondensator 1
+                              
+id_mono=(1.1*r1_mono*k_mono);
